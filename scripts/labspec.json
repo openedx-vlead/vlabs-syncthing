@@ -29,29 +29,17 @@
     "build_requirements": {
       "platform": {
         "os": "ubuntu",
-        "osVersion": "12",
+        "osVersion": "14",
         "arch": "x64",
         "service_pack": "",
         "installer": [
-        ],
-        "build_steps": {
-          "configure": [],
-          "pre_build": [],
-          "build": [
-            "cd ../;make"
-          ],
-          "post_build": [
-            "cp -R ../build/prj/* /var/www/",
-            "chmod -R 755 /var/www"
-          ],
-          "status": []
-        }
+        ]
       }
     },
     "runtime_requirements": {
       "platform": {
         "os": "ubuntu",
-        "osVersion": "12",
+        "osVersion": "14",
         "arch": "x64",
         "servicepack": "",
         "hosting": "dedicated",
@@ -64,9 +52,9 @@
         },
         "installer": [
           "sudo apt-get update",
-          "sudo apt-get install -y apache2",
+          "sudo apt-get install -y nginx",
           "bash /root/labs/vlabs-dev-pages/scripts/apache-conf.sh",
-          "sudo service apache2 restart"
+          "sudo service nginx restart"
         ],
         "lab_actions": {
           "init"    : [],
