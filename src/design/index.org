@@ -7,12 +7,11 @@
 #+options: ^:nil
 
 * Introduction 
-  This document illustrates design of syncthing server
+  This document illustrates design of syncthing tool for synchronizing files/folders between client and server.
 * Design of Syncthing
 [[../images/design-of-syncthing.jpg]]
 
  *Client-Server* : A client-server network is designed for end-users,
   called clients, to access resources such as files/folders, songs
   collections, or some other services from a central server called
-  server. A server's sole purpose is to do what its name implies -
-  serve its clients
+  server.
