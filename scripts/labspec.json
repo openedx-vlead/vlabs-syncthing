@@ -39,8 +39,8 @@
     "runtime_requirements": {
       "platform": {
         "os": "ubuntu",
-        "osVersion": "16",
-        "arch": "x64",
+        "osVersion": "16.04",
+        "arch": "x86_64",
         "servicepack": "",
         "hosting": "dedicated",
         "memory": {
