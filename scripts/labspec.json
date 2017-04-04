@@ -51,7 +51,7 @@
           "min_required": "10gb"
         },
         "installer": [
-            "bash ./scripts/syncthing.sh",
+            "bash ./syncthing.sh",
 
 
         ],
