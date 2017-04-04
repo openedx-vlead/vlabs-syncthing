@@ -1,8 +1,8 @@
 {
   "lab": {
     "description": {
-      "name": "VLEAD Dev Pages",
-      "id": "VLEAD Dev Pages-v1.0",
+      "name": "VLEAD Syncthing",
+      "id": "VLEAD Syncthing v1.0.0",
       "status": "working code",
       "discipline": [],
       "type": "",
@@ -29,7 +29,7 @@
     "build_requirements": {
       "platform": {
         "os": "ubuntu",
-        "osVersion": "14",
+        "osVersion": "16",
         "arch": "x64",
         "service_pack": "",
         "installer": [
@@ -39,7 +39,7 @@
     "runtime_requirements": {
       "platform": {
         "os": "ubuntu",
-        "osVersion": "14",
+        "osVersion": "16",
         "arch": "x64",
         "servicepack": "",
         "hosting": "dedicated",
@@ -51,10 +51,9 @@
           "min_required": "10gb"
         },
         "installer": [
-          "sudo apt-get update",
-          "sudo apt-get install -y nginx",
-          "bash /root/labs/vlabs-dev-pages/scripts/apache-conf.sh",
-          "sudo service nginx restart"
+            "bash ./scripts/syncthing.sh",
+
+
         ],
         "lab_actions": {
           "init"    : [],

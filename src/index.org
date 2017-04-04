@@ -11,5 +11,4 @@
   [[./requirements/index.org][Requirements]]
 * Design
   [[./design/index.org][Design diagram]]
-* Implementation
-  [[./runtime/implementation/index.org][Implementation]]
+
