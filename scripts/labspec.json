@@ -24,6 +24,22 @@
             "office_number": ""
 
           }
+          },
+	        {
+	  "name": "Siva Shanker",
+          "title": "",
+          "role": "Project Engineer",
+          "organization": "VLEAD",
+          "institute": "IIIT Hyderabad",
+          "web": "",
+          "department": "Software Engg Research Lab (SERL)",
+          "contact": {
+            "email": "shankar@vlabs.ac.in",
+            "alternate_email": "",
+            "mobile_number": "",
+            "office_number": ""
+
+          }
         }
 
       ]
