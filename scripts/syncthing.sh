@@ -1,6 +1,5 @@
-
-#export http_proxy="http://proxy.iiit.ac.in:8080"
-#export https_proxy="http://proxy.iiit.ac.in:8080"
+CONF_FILE="/etc/apache2/sites-enabled/000-default.conf"
+BACKUP_CONF_FILE="/etc/apache2/sites-enabled/000-default.conf.original"
 
 curl -s https://syncthing.net/release-key.txt | apt-key add -
 
@@ -13,9 +12,10 @@ systemctl start syncthing@$USER.service
 
 apt-get install libapache2-mod-proxy-uwsgi -y
 
-echo "NameVirtualHost *:80" >> /etc/apache2/sites-enabled/000-default.conf
-echo "<VirtualHost *:80>\nServerName sync.vlabs.ac.in\n<Location />\nProxyPass http://localhost:8384/\nProxyPassReverse http://localhost:8384/\n</Location>\n</VirtualHost>" >> /etc/apache2/sites-enabled/000-default.conf
+cp $CONF_FILE $BACKUP_CONF_FILE
 a2enmod proxy_http
+echo "<VirtualHost *:80>\n<Location />\nProxyPass http://localhost:8384/\nProxyPassReverse http://localhost:8384/\n</Location>\n</VirtualHost>" >> $CONF_FILE
+
 service apache2 restart
 
 
