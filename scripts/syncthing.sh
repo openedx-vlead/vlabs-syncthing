@@ -15,7 +15,7 @@ apt-get install libapache2-mod-proxy-uwsgi -y
 
 echo "NameVirtualHost *:80" >> /etc/apache2/sites-enabled/000-default.conf
 echo "<VirtualHost *:80>\nServerName sync.vlabs.ac.in\n<Location />\nProxyPass http://localhost:8384/\nProxyPassReverse http://localhost:8384/\n</Location>\n</VirtualHost>" >> /etc/apache2/sites-enabled/000-default.conf
-
+a2enmod proxy_http
 service apache2 restart
 
 
