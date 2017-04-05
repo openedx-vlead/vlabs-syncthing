@@ -51,7 +51,7 @@
           "min_required": "10gb"
         },
         "installer": [
-            "bash ./syncthing.sh"
+            "bash ~/labs/vlabs-syncthing/scripts/syncthing.sh"
 
 
         ],
