@@ -59,7 +59,7 @@
           "min_required": "10gb"
         },
         "installer": [
-          "bash /root/labs/vlabs-syncthing/scripts/syncthing.sh"
+          "sh /root/labs/vlabs-syncthing/scripts/syncthing.sh"
         ],
         "lab_actions": {
           "init"    : [],
