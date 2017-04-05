@@ -14,7 +14,7 @@ apt-get install libapache2-mod-proxy-uwsgi -y
 
 cp $CONF_FILE $BACKUP_CONF_FILE
 a2enmod proxy_http
-echo "<VirtualHost *:80>\n<Location />\nProxyPass http://localhost:8384/\nProxyPassReverse http://localhost:8384/\n</Location>\n</VirtualHost>" >> $CONF_FILE
+echo "<VirtualHost *:80>\n<Location />\nProxyPass http://localhost:8384/\nProxyPassReverse http://localhost:8384/\n</Location>\n</VirtualHost>" > $CONF_FILE
 
 service apache2 restart
 
