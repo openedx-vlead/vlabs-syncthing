@@ -1,16 +1,16 @@
 {
   "lab": {
-    "description": {
+      "description": {
       "name": "VLEAD Syncthing",
       "id": "VLEAD Syncthing v1.0.0",
       "status": "working code",
       "discipline": [],
       "type": "",
       "server-side": true,
-      "integration_level": 6,
+      "integration_level": 5,
       "developer": [
-        {
-          "name": "Raghupathi Kammari",
+          {
+	  "name": "Raghupathi Kammari",
           "title": "",
           "role": "Jr. Project Engineer",
           "organization": "VLEAD",
@@ -22,18 +22,26 @@
             "alternate_email": "",
             "mobile_number": "",
             "office_number": ""
+
           }
         }
+
       ]
      },
     "build_requirements": {
       "platform": {
         "os": "ubuntu",
-        "osVersion": "16",
-        "arch": "x64",
+        "osVersion": "16.04",
+        "arch": "x86_64",
         "service_pack": "",
-        "installer": [
-        ]
+        "installer": [  ],
+        "build_steps": {
+          "configure": [],
+          "pre_build": [],
+          "build": [ ],
+          "post_build": [ ],
+          "status": []
+        }
       }
     },
     "runtime_requirements": {
@@ -51,9 +59,7 @@
           "min_required": "10gb"
         },
         "installer": [
-            "bash ~/labs/vlabs-syncthing/scripts/syncthing.sh"
-
-
+          "bash /root/labs/vlabs-syncthing/scripts/syncthing.sh"
         ],
         "lab_actions": {
           "init"    : [],
@@ -73,3 +79,4 @@
   },
   "template": "1.0"
 }
+
