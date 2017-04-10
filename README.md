@@ -1,2 +1,2 @@
-# Virtual Labs Syncthing Server
+# Syncthing for Virtual Labs College Cloud Edition
 
