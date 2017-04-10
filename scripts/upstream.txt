@@ -1,4 +1,0 @@
-upstream syncthing {
-		server syncthing.base4.vlabs.ac.in:8080 ;
-}
-
