@@ -10,15 +10,5 @@
 
 * Requirements
 *** Req1
-   - Setting up syncthing tool on system.
-    
-[[https://github.com/openedx-vlead/college-cloud/blob/cc-april-delhi/src/syncthing/index.org][Installation-of-Syncthing]]
-*** Req2
     - Facilitate sharing files/folders between client and server.
-    [[https://github.com/openedx-vlead/college-cloud/blob/master/src/syncthing/index.org#how-to-share-filesfolders-between-college-cloud-server-and-vlead-central-repository][Implementation]]
-*** Req3 
-     - Create a manual for users and configuring syncthing.
-     [[https://github.com/openedx-vlead/college-cloud/blob/cc-april-delhi/src/syncthing/user-manual.org][User manual]]
-*** Req4
-    - Visit github issue to [[https://github.com/openedx-vlead/college-cloud/issues/10][Read the plan]]
-    - Check [[https://github.com/openedx-vlead/college-cloud/milestone/5][Milestone for more tasks]]
+    [[https://github.com/openedx-vlead/college-cloud/blob/develop/src/installation-manual.org#syncthing][Installation manual]]
